@@ -16,7 +16,7 @@
 
       return $conn;
 
-    }catch(PDOException $error){
+    }catch(PDOException $e){
       //echo the errors
       echo "<br>{$e->getCode()}: {$e->getMessage()}</br>";
       return false;
